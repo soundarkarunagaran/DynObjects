@@ -1,0 +1,17 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="DynObjectsPresentation.Visuals.Antenna"
+	Width="30" Height="60">
+	<UserControl.RenderTransform>
+		<ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+	</UserControl.RenderTransform>
+
+	<Grid x:Name="LayoutRoot">
+		<Path Data="M45.5,-1.110223E-16 L30.413794,30.000338 L14.25,-4.3298698E-15" Margin="0,0,0,29" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" HorizontalAlignment="Left" Width="30"/>
+		<Path Data="M29,-0.5 L29,60" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="15,-0.5,0,-1" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" Width="1"/>
+	</Grid>
+</UserControl>

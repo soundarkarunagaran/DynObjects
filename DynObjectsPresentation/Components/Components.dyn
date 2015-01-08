@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Dyn SupportContracts="false">
+  <RootNamespace>DynObjectsPresentation</RootNamespace>
+  <ComponentProvider>Components</ComponentProvider>
+
+  <UsingNamespaces>
+    <Namespace>System</Namespace>
+    <Namespace>System.Collections.Generic</Namespace>
+    <Namespace>System.Windows</Namespace>
+    <Namespace>System.Windows.Controls</Namespace>
+    <Namespace>Dyn</Namespace>
+  </UsingNamespaces>
+  
+  <Components>
+    <Component>VisualFeature</Component>
+    <Component>Player</Component>
+    <Component>Missile</Component>
+    <Component>MonsterFeature</Component>
+    <Component>HealthFeature</Component>
+    <Component>MotionFeature</Component>
+    <Component>WorldObject</Component>
+    <MulticastBeacon>Beacon</MulticastBeacon>
+  </Components>
+
+  <DefaultMessageImplementationClass>DefaultMessageImplementations</DefaultMessageImplementationClass>
+  <MessageDefsNamespace>ComponentMsgs</MessageDefsNamespace>
+  <Messages>
+    <Message Multicast="true">
+      void AddedToWorld(World world);
+    </Message>
+    <Message>
+      Point GetPosition();
+    </Message>
+    <Message>
+      void SetPosition(Point newPosition);
+    </Message>
+    <Message Multicast="true">
+      void PositionChanged(Point newPosition);
+    </Message>
+    <Message>
+      World GetWorld();
+    </Message>
+    <Message>
+      Size GetSize();
+    </Message>
+    <Message HasDefaultImpl="true">
+      bool Hit(DynObject byWhom);
+    </Message>
+    <Message Multicast="true" GenerateBeacon="true">
+      void OnDead();
+    </Message>
+    <Message>
+      Canvas GetComposer();
+    </Message>
+  </Messages>
+</Dyn>

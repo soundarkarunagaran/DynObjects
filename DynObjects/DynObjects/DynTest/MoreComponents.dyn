@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Dyn>
+  <RootNamespace>DynTest.More</RootNamespace>
+  <ComponentProvider>MoreComponents</ComponentProvider>
+  <InfoMessage>This file is part of the DynObjects library's test suite. Copyright Stefan Dragnev 2010</InfoMessage>
+
+  <UsingNamespaces>
+    <Namespace>System</Namespace>
+    <Namespace>System.Collections.Generic</Namespace>
+  </UsingNamespaces>
+  
+  <Components>
+    <Component>Web</Component>
+    <Component>View</Component>
+    <Component>Something</Component>
+  </Components>
+
+  <DefaultMessageImplementationClass>DefaultMessageImplementations</DefaultMessageImplementationClass>
+  <MessageDefsNamespace>MoreMsgs</MessageDefsNamespace>
+  <Messages>
+    <Message>
+      void Browse();
+    </Message>
+    <Message>
+      void Show();
+    </Message>
+    <Message HasDefaultImpl="true">
+      void DoSomething();
+    </Message>
+  </Messages>
+</Dyn>

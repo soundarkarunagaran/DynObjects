@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="DynObjectsPresentation.Visuals.Capacitor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="60" Height="60">
+    
+    <Grid x:Name="LayoutRoot">
+    	<Path Data="M15.333333,0.083333336" Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="1" Margin="0,0.083,13.667,0" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" Width="1"/>
+    	<Path Data="M-0.50000775,11.166665 L29.500456,11.166665" Fill="#FFF4F4F5" Margin="0,24.165,-1,0" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" StrokeThickness="4" Height="2" d:LayoutOverrides="VerticalAlignment"/>
+    	<Path Data="M-0.58333123,17.91666 L29.419561,17.91666" Fill="#FFF4F4F5" Margin="-0.253,0,-0.75,22.83" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="4" Height="2" d:LayoutOverrides="VerticalAlignment"/>
+    	<Path Data="M15.333,-0.58333373 L15.333,12.083" Fill="#FFF4F4F5" Height="26.995" Margin="29.333,-0.83,29.667,0" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" StrokeThickness="2"/>
+    	<Path Data="M15.333,16.166637 L15.333,29.500395" Fill="#FFF4F4F5" Height="25.083" Margin="29.333,0,29.667,-0.253" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="2"/>
+
+    </Grid>
+</UserControl>

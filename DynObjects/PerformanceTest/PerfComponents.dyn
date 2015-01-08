@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Dyn>
+  <RootNamespace>PerformanceTest</RootNamespace>
+  <ComponentProvider>PerfComponents</ComponentProvider>
+
+  <UsingNamespaces>
+    <Namespace>System</Namespace>
+    <Namespace>System.Collections.Generic</Namespace>
+  </UsingNamespaces>
+  
+  <Components>
+    <Component>Perf</Component>
+    <Component>Perf2</Component>
+    <Component>Perf3</Component>
+    <MulticastBeacon>Beacon</MulticastBeacon>
+  </Components>
+
+  <DefaultMessageImplementationClass>DefaultMessageImplementations</DefaultMessageImplementationClass>
+  <MessageDefsNamespace>PerfComponentsMsgs</MessageDefsNamespace>
+  <Messages>
+    <Message ThruInterface="true">
+      void Unicast();
+    </Message>
+    <Message Multicast="true" GenerateBeacon="true">
+      void Multicast();
+    </Message>
+  </Messages>
+</Dyn>

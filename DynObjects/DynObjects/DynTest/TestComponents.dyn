@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dyn>
+  <RootNamespace>DynTest</RootNamespace>
+  <ComponentProvider>GameComponents</ComponentProvider>
+  <InfoMessage>This file is part of the DynObjects library's test suite. Copyright Stefan Dragnev 2010</InfoMessage>
+
+  <UsingNamespaces>
+    <Namespace>Dyn</Namespace>
+    <Namespace>System</Namespace>
+    <Namespace>System.Runtime.CompilerServices</Namespace>
+    <Namespace>System.Collections.Generic</Namespace>
+    <Namespace>System.ComponentModel</Namespace>
+  </UsingNamespaces>
+  
+  <Components>
+    <Component>Stats</Component>
+    <Component>Brain</Component>
+    <Component>Motor</Component>
+    <Component>Rendering</Component>
+    <Component>StatsRendering</Component>
+
+    <Component>TestClass1</Component>
+    <Component>TestClass2</Component>
+    <Component>TestClassMulticast</Component>
+    <Component>TestClassMulticastHighPriority</Component>
+    <Component>TestClassMulticastLowPriority</Component>
+    <Component>TestClassMulticastHigherBid1</Component>
+    <Component>TestClassMulticastHigherBid2</Component>
+
+    <Component>Depended</Component>
+    <Component>Dependent1</Component>
+    <Component>Dependent2</Component>
+    <Component>DependentOn1</Component>
+    <Component>Mandatory</Component>
+    
+    <Component>EqualBid1</Component>
+    <Component>EqualBid2</Component>
+
+    <Component Accessor="AnothersNestedClass">AnotherNamespace.NestedClass</Component>
+    <Component Accessor="ExternalComponent">External.ExternalComponent</Component>
+    <Component>External.AutomaticGetter</Component>
+    <Component NoAccessor="true">NoAccessorComponent</Component>
+  </Components>
+
+  <DefaultMessageImplementationClass>DefaultMessageImplementations</DefaultMessageImplementationClass>
+  <MessageDefsNamespace>GameMsgs</MessageDefsNamespace>
+  <Messages>
+
+    <Message>
+      [  CompilerGenerated()  ] [TestAttribute(Values = new[] { 3,5,7 })]
+      void WithAttribute()
+    </Message>
+    
+    <Message>
+      T SimpleGeneric{T, U}(T t, U u)
+    </Message>
+
+    <Message>
+      void Foo()
+    </Message>
+    <Message>
+      int Bar(int a, char b, string c);
+    </Message>
+    <Message HasDefaultImpl="true" Multicast="true" ThruInterface="true">
+      void Baz();
+    </Message>
+
+    <Message>
+      [EditorBrowsable(), TestAttribute(Values = new[] { 3,5,7 }, SomeOtherValues = "Don't put brackets here...")]
+      [System.Diagnostics.Contracts.Pure]
+      Func{int, List{int}, System.String} ElaborateSignature{T, U, SomeOtherParam}(ref Func{List{int}, Dictionary{int, U}} param1, out Func{ Func{T} } param2, Func{ List { SomeOtherParam },Func{ int }} param3) where T : class, IEnumerable{U} where U : new() where SomeOtherParam : struct, IEquatable{T}, IComparable{T}
+    </Message>
+
+    <Message>
+      void TestMessage0()
+    </Message>
+    <Message>
+      int TestMessage1(out bool result);
+    </Message>
+    <Message HasDefaultImpl="true">
+      int TestMessageDefaultImpl()
+    </Message>
+    <Message HasDefaultImpl="true" Multicast="true">
+      void TestMessageMulticastDefaultImpl(ref int value);
+    </Message>
+
+    <Message Multicast="true">
+      void TestMessageMulticast(ref List{string} result)
+    </Message>
+
+    <Message Overload="Int">
+      int Overloaded(int x)
+    </Message>
+    <Message Overload="Float">
+      float Overloaded(float x);
+    </Message>
+    <Message>
+      string Overloaded(string x)
+    </Message>
+
+    <Message>
+      T Convert{T,U}(U from)
+    </Message>
+
+
+  </Messages>
+</Dyn>

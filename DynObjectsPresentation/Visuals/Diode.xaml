@@ -1,0 +1,22 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="DynObjectsPresentation.Visuals.Diode"
+	Width="60" Height="60">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid Margin="0.667,17.333,-1.667,16.667" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+			<Grid.RenderTransform>
+				<CompositeTransform Rotation="90"/>
+			</Grid.RenderTransform>
+			<Path Data="M0,27.25 L60.003254,27.25" Fill="#FFF4F4F5" Margin="0,12.375,-0.003,11.625" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" StrokeThickness="2" d:LayoutOverrides="Height"/>
+			<Path Data="M19.269361,15.466176 L19.269361,40.166843" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="19.255,0.25,0,0.375" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeThickness="2" Width="2"/>
+			<Path Data="M19.476454,15.465038 L39.87748,27.671103" Fill="#FFF4F4F5" Margin="19.63,0.375,20.264,12.75" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeThickness="2"/>
+			<Path Data="M19.032709,41.40276 L40.023926,28.948355" Fill="#FFF4F4F5" Margin="19.255,12.527,20.074,0.375" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeThickness="2"/>
+			<Path Data="M39.644279,15.202 L39.644279,40.827286" Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,0,20.37,-0.25" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeThickness="2" Width="2"/>
+		</Grid>
+	</Grid>
+</UserControl>

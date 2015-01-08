@@ -1,0 +1,16 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="DynObjectsPresentation.Visuals.OrGate"
+	Width="60" Height="60">
+
+	<Grid x:Name="LayoutRoot">
+		<Path Data="M24.75,41.875019 L24.75,59.376804" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="18.502" Margin="24.75,0,0,-0.377" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="2"/>
+		<Path Data="M35.125,41.624992 L35.125,59.500069" Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="18.875" Margin="0,0,23.875,-0.5" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="2"/>
+		<Path Data="M30.124973,17.875 C18.499952,27 14.624973,29.875 15.249973,48.375 C25.374899,39.25 36.373886,39.249748 44.999016,48.375 C45.37402,29.375 41.37513,26.5 30.124973,17.875 z" Margin="14.686,17.375,14.476,11.125" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" StrokeThickness="2"/>
+		<Path Data="M29.186485,-0.87036949 L29.124489,18.36986" Fill="#FFF4F4F5" Height="20.124" Margin="29.126,-0.812,28.812,0" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" StrokeThickness="2"/>
+	</Grid>
+</UserControl>
